@@ -1,0 +1,17 @@
+name: HubManager
+main: com.yahoo.prosfis.hubmanager.HubManager
+version: 1.0.0
+
+commands:
+     hmset:
+        description: set server region
+        usage: /<command> <server>
+        permission: Hub.admin
+        permission-message: You do not have <permission>
+permissions:
+    Hub.default:
+        description: default perms
+        default: true
+    Hub.admin:
+        description: admin perms
+        default: op
